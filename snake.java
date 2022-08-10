@@ -10,12 +10,8 @@ public class snake{
 	public static int y = 5;
 	public static boolean game_over = false;
 	public static char read_one_char(){
-		Scanner scan = new Scanner(System.in);
-		char res = scan.next().charAt(0);
-		if(res == '\n'){
-			while(scan.next().charAt(0) != '\n');
-		}
-		return res;
+		Scanner input = new Scanner(System.in);
+		return input.next().charAt(0);
 	}
 	public static void print_board(){
 		System.out.println("############");
