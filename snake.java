@@ -12,9 +12,9 @@ public class snake{
 	public static char read_one_char(){
 		Scanner scan = new Scanner(System.in);
 		char res = scan.next().charAt(0);
-		/*if(res - '\n' != 0){
+		if(res == '\n'){
 			while(scan.next().charAt(0) != '\n');
-		}*/
+		}
 		return res;
 	}
 	public static void print_board(){
