@@ -10,8 +10,7 @@ public class snake{
 	public static int y = 5;
 	public static boolean game_over = false;
 	public static char read_one_char(){
-		Scanner input = new Scanner(System.in);
-		return input.next().charAt(0);
+		return new Scanner(System.in).next().charAt(0);
 	}
 	public static void print_board(){
 		System.out.println("############");
